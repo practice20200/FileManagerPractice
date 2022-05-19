@@ -13,6 +13,7 @@
 		B3C3408E2836CF4A00C26088 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C3408C2836CF4A00C26088 /* Main.storyboard */; };
 		B3C340902836CF4E00C26088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C3408F2836CF4E00C26088 /* Assets.xcassets */; };
 		B3C340932836CF4E00C26088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C340912836CF4E00C26088 /* LaunchScreen.storyboard */; };
+		B3C3409C2836CFDF00C26088 /* Elements in Frameworks */ = {isa = PBXBuildFile; productRef = B3C3409B2836CFDF00C26088 /* Elements */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3C3409C2836CFDF00C26088 /* Elements in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = PracticeFileManager;
+			packageProductDependencies = (
+				B3C3409B2836CFDF00C26088 /* Elements */,
+			);
 			productName = PracticeFileManager;
 			productReference = B3C340832836CF4A00C26088 /* PracticeFileManager.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = B3C3407A2836CF4A00C26088;
+			packageReferences = (
+				B3C3409A2836CFDF00C26088 /* XCRemoteSwiftPackageReference "ElementKit" */,
+			);
 			productRefGroup = B3C340842836CF4A00C26088 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -356,6 +364,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B3C3409A2836CFDF00C26088 /* XCRemoteSwiftPackageReference "ElementKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/practice20200/ElementKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B3C3409B2836CFDF00C26088 /* Elements */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3C3409A2836CFDF00C26088 /* XCRemoteSwiftPackageReference "ElementKit" */;
+			productName = Elements;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B3C3407B2836CF4A00C26088 /* Project object */;
 }
